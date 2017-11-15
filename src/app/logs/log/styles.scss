@@ -1,1 +1,14 @@
-.logs .log {}
+.logs {
+  .items {
+    .log {
+      &.suc p { color: #4caf50; }
+      &.err p { color: #f44336; }
+      &.war p { color: #ff9800; }
+
+      p {
+        margin: 0 0 .9rem;
+        font-weight: 300;
+      }
+    }
+  }
+}

@@ -7,9 +7,16 @@ class Log extends React.Component {
     super();
   }
 
+  getClassName() {
+    let className = 'log';
+    return `${className} ${this.props.type}`;
+  }
+
   render() {
+    let className = this.getClassName();
+
     return (
-      <div className="log">
+      <div className={className}>
         <p>Lorem ipsum dolor sit amet, consectetur</p>
       </div>
     );

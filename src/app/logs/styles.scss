@@ -1,1 +1,9 @@
-.logs {}
+.logs {
+  .items {
+    margin: 0;
+    padding: 1rem;
+    background-color: #eee;
+    height: 18rem;
+    overflow: auto;
+  }
+}
