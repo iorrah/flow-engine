@@ -3,9 +3,20 @@ import TextAreaField from '../../fields/text-area';
 import './styles.css';
 
 class Form extends React.Component {
-  // eslint-disable-next-line
   constructor() {
     super();
+
+    this.state = {
+      parameter: ''
+    };
+
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange(event) {
+    let element = event.target;
+    let stateAttr = element.attributes['stateness'].value;
+    this.setState({ [stateAttr]: element.value });
   }
 
   render() {
@@ -14,7 +25,16 @@ class Form extends React.Component {
         <h1>Form</h1>
 
         <form>
-          <TextAreaField name="json" />
+          <div className="mb-3">
+            <TextAreaField
+              name="parameter"
+              label="Parameter"
+              value={this.state.parameter}
+              onChange={this.onChange}
+              stateness="parameter"
+            />
+          </div>
+
           <button className="btn">Submit</button>
         </form>
       </div>

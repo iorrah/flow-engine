@@ -13,15 +13,15 @@ class CreateRule extends React.Component {
       <main className="create-rule">
         <div className="wrapper">
           <div className="line">
-            <div className="fit fit-3 fit-hidden-xs">
+            <div className="fit fit-1 fit-hidden-xs">
               &nbsp;
             </div>
 
-            <div className="fit fit-4">
+            <div className="fit fit-8">
               <Form />
             </div>
 
-            <div className="fit fit-3 xs-fit-0">
+            <div className="fit fit-1 xs-fit-0">
               &nbsp;
             </div>
           </div>

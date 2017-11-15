@@ -35,6 +35,7 @@
       .text {
         white-space: nowrap;
         font-size: 1rem;
+        font-weight: 300;
         padding: .75rem 1.3rem;
         display: inline-block;
         width: 90%;
@@ -51,6 +52,8 @@
         width: 10%;
         font-size: 1.3rem;
         text-align: center;
+
+        svg path { color: #bfbcbc; }
       }
     }
   }
