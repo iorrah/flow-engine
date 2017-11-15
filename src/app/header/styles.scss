@@ -3,11 +3,8 @@
 header {
   color: inherit;
   position: absolute;
-  background-color: #fff;
   width: 100%;
   padding: 1.5rem 0;
-  @include box-shadow((0 0 11px 0 rgba(0, 0, 0, .08),
-                       0 4px 15px 0 rgba(0, 0, 0, .1)));
 
   .logo {
     color: inherit;
@@ -15,7 +12,7 @@ header {
     font-size: 1.3rem;
     font-family: inherit;
     margin: 0;
-    font-weight: 900;
+    font-weight: 300;
     background-color: transparent;
     border-radius: 0;
     border: 0;
