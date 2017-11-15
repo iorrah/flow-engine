@@ -1,3 +1,54 @@
 .field {
-  color: yellow;
+  margin: 0 0 1.5rem;
+  position: relative;
+  z-index: 0;
+
+  .descr {
+    display: inline-block;
+    position: absolute;
+    top: 1.3rem;
+    left: 0;
+    font-size: .9rem;
+    color: #333;
+    transition: all .3s ease;
+    font-weight: 300;
+  }
+
+  .entry {
+    background-color: transparent;
+    padding: 1.2rem 0 .8rem;
+    border: 0;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: Roboto;
+
+    &:focus {
+      outline: 0;
+      border-color: #2196f3;
+
+      & + .descr {
+        color: #2196f3;
+      }
+    }
+
+    &:focus,
+    &.has-value {
+      & + .descr {
+        top: 0;
+        font-size: .6rem;
+      }
+    }
+
+    // &:before {
+      // content: ' ';
+      // display: block;
+      // position: absolute;
+      // width: 100%;
+      // height: 0;
+      border-bottom: .1rem solid rgba(0, 0, 0, 0.41);
+    // }
+  }
 }
+

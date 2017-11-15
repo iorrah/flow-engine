@@ -1,3 +1,5 @@
-.field.text-area {
-  color: purple;
+.field .entry.area {
+  resize: none;
+  height: 7rem;
+  overflow: auto;
 }
