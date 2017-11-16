@@ -27,7 +27,7 @@ class Form extends React.Component {
   render() {
     return (
       <div className="form">
-        <h1>Form</h1>
+        <h1>Create a new rule</h1>
 
         <form>
           <div className="mb-3">

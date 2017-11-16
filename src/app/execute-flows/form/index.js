@@ -21,8 +21,8 @@ class Form extends React.Component {
 
   render() {
     return (
-      <div className="form">
-        <h1>Form</h1>
+      <div className="form mb-4">
+        <h1>Execute flows</h1>
 
         <form>
           <div className="mb-3">

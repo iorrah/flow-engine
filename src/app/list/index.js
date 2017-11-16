@@ -3,15 +3,18 @@ import './styles.css';
 import Item from './item';
 
 class List extends React.Component {
-  // eslint-disable-next-line
   constructor() {
     super();
+
+    this.state = {
+      lits: []
+    }
   }
 
   render() {
     return (
       <div className="list">
-        <h1>List</h1>
+        <h1>Rules list</h1>
 
         <ul className="items">
           <Item />

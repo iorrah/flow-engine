@@ -1,10 +1,6 @@
 @import '../../styles/mixins';
 
 .list {
-  h1 {
-    margin: 0 0 3rem;
-  }
-
   .items {
     padding: 0;
     margin: 0;
@@ -21,8 +17,10 @@
       padding: 0;
       background-color: #fff;
       cursor: pointer;
-      transition: .9s ease;
+      transition: .3s ease;
       border-bottom: .1rem solid #f1f1f1;
+      position: relative;
+      overflow: auto;
 
       &:last-child {
         border-color: transparent;
@@ -34,11 +32,14 @@
 
       .text {
         white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: 1rem;
         font-weight: 300;
         padding: .75rem 1.3rem;
-        display: inline-block;
+        display: block;
         width: 90%;
+        float: left;
       }
 
       small {
@@ -47,11 +48,12 @@
       }
 
       .action {
-        padding: 1rem 1rem 1rem 0;
-        display: inline-block;
+        padding: 1.55rem 1.3rem 1rem 0;
+        display: block;
         width: 10%;
         font-size: 1.3rem;
-        text-align: center;
+        text-align: right;
+        float: left;
 
         svg path { color: #bfbcbc; }
       }

@@ -14,8 +14,6 @@ class Logs extends React.Component {
   render() {
     return (
       <div className="logs">
-        <h1>Logs</h1>
-
         <div className="items">
           <Log type="suc" />
           <Log type="err" />

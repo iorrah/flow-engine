@@ -25,16 +25,28 @@
 
   &.btn-link {
     box-shadow: none;
-    color: #2196f3;
-    padding: 0 0 .1rem;
+    padding: 0 .6rem .1rem;
     background-color: transparent;
     font-size: .95rem;
     font-weight: 300;
     text-align: center;
+    min-width: auto;
 
     &:hover {
       color: #008fff;
       background-color: transparent;
+    }
+
+    &.btn-link-blue {
+      color: #2196f3;
+
+      &:hover { color: #008fff; }
+    }
+
+    &.btn-link-white {
+      color: #fff;
+
+      &:hover { color: #fff; }
     }
   }
 }

@@ -7,21 +7,35 @@ class Header extends React.Component {
     return (
       <header>
         <div className="wrapper">
-          <Link to="/" className="logo">
+          <Link
+            to="/"
+            className="logo"
+          >
             Flow Engine
           </Link>
 
-          <Link to="/create-rule" className="btn btn-link pull-right">
-            Create Rule
-          </Link>
+          <div className="links">
+            <Link
+              to="/"
+              className="btn btn-link btn-link-white"
+            >
+              List
+            </Link>
 
-          <Link to="/execute-flows" className="btn btn-link pull-right">
-            Execute Flows
-          </Link>
+            <Link
+              to="/create-rule"
+              className="btn btn-link btn-link-white"
+            >
+              Create
+            </Link>
 
-          <Link to="/" className="btn btn-link pull-right">
-            Home
-          </Link>
+            <Link
+              to="/execute-flows"
+              className="btn btn-link btn-link-white pr-0"
+            >
+              Execute
+            </Link>
+          </div>
         </div>
       </header>
     );
